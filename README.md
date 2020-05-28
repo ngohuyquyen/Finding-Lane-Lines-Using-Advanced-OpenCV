@@ -43,3 +43,7 @@ Therefore, the algorithm hasn't been working on this yet.
 ### 3. Suggest possible improvements to your pipeline
 
 A possible improvement would be to incorporate more algorithm on color spaces, gradient manipulation and other advanced algorithms to make the revised algorithm more robust and adaptable to extreme conditions.
+
+
+### 4. How to run
+Run file My Project.ipynb or project.py.
