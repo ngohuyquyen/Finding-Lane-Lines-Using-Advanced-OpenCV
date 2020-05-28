@@ -1,21 +1,15 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Finding Lane Lines on the Road**
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+When we drive, we use our eyes to decide where to go. The lines on the road that show us where the lanes are act as our constant 
+reference for where to steer the vehicle. Naturally, one of the first things we would like to do in developing a self-driving car is to 
+automatically detect lane lines using an algorithm.
 
-
-[//]: # (Image References)
-
-[image1]: ./grayscale.jpg "Grayscale"
+In this project I will detect lane lines in images using Python and OpenCV. OpenCV means "Open-Source Computer Vision", which is a 
+package that has many useful tools for analyzing images.
 
 ---
 
@@ -36,19 +30,17 @@ In order to draw the two lane lines (left and right), here are the steps:
 3) Draw two lines with y values of bottom and top of trapezium mask using the average m and b above. Those are two desired lane lines.
 
 [//]: # (Image References)
+<img src="test_result.png" width="480" alt="Combined Image" />
 [image1]: ./test_result.png "Test Image"
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+One potential shortcoming would be what would happen when I test on the challenge video.
+The challenge video has more extreme weather conditions such as sunlight, shades, etc. Also the vehicle is moving very fast.
+Therefore, the algorithm hasn't been working on this yet.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to incorporate more algorithm on color spaces, gradient manipulation and other advanced algorithms to make the revised algorithm more robust and adaptable to extreme conditions.
