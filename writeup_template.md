@@ -30,7 +30,8 @@ In order to draw the two lane lines (left and right), here are the steps:
 3) Draw two lines with y values of bottom and top of trapezium mask using the average m and b above. Those are two desired lane lines.
 
 [//]: # (Image References)
-[image1]: ./test_videos_output/test_result.jpg "test_result"
+<img src="test_videos_output/test_result.jpg" width="480" alt="Test Image" />
+
 
 ### 2. Identify potential shortcomings with your current pipeline
 
