@@ -15,21 +15,27 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./grayscale.jpg "Grayscale"
 
 ---
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Pipeline Description
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps:
+1) Convert the image to grayscale.
+2) Use Gaussian Blur to smooth the grayscaled image (with kernal 5).
+3) Use Canny algorithm to find edges (with thresholds from 50 to 150).
+4) Get the region of interest of trapezium shaped with 4 vertices.
+5) Use Hough Transform on the masked image and weight the final output.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+In order to draw the two lane lines (left and right), here are the steps:
+1) Separate detected line segments with equation y = mx + b into left and right lane lines by calculating line slope m and value b. Positive slope is left lane line and negative slope is right lane line.
+2) Calculate the average m value and b value within each list of left lane and right lane.
+3) Draw two lines with y values of bottom and top of trapezium mask using the average m and b above. Those are two desired lane lines.
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
+[image1]: ./test_result.png "Test Image"
 
 
 ### 2. Identify potential shortcomings with your current pipeline
