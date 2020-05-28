@@ -35,6 +35,7 @@ In order to draw the two lane lines (left and right), here are the steps:
 2) Calculate the average m value and b value within each list of left lane and right lane.
 3) Draw two lines with y values of bottom and top of trapezium mask using the average m and b above. Those are two desired lane lines.
 
+[//]: # (Image References)
 [image1]: ./test_result.png "Test Image"
 
 
